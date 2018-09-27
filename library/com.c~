@@ -1,0 +1,26 @@
+#ifndef _com_
+#define _com_
+
+int combine(int B_position, int R_position, int turn)
+{
+   int overlap = 0;
+   
+   if(turn  == 0)//블루 턴
+   {
+      if(B_position == R_position)
+      {
+         R_position = 0;
+         overlap = 1;
+      }                 
+   }
+   else //리얼옐로 턴
+   {
+      if(R_position == B_position)
+      {
+         B_position = 0;
+         overlap = 1;
+      }                 
+   }
+   return overlap;
+}
+#endif

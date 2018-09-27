@@ -1,0 +1,18 @@
+#ifndef _Ygoal_
+#define _Ygoal_
+
+int goal(int B_position, int R_position)
+{
+   int goal = 0;
+   
+   if(B_position > 44 || (B_position > 20 && B_position < 30))
+   {
+      goal = 1;
+   }
+   if(R_position > 44 || (R_position > 20 && R_position < 30))
+   {
+      goal = 2;
+   }
+   return goal;     
+}
+#endif

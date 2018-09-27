@@ -1,0 +1,23 @@
+#ifndef _Ycount_
+#define _Ycount_
+
+int count()
+{
+   bit yoot_array1;
+   bit yoot_array2;
+   bit yoot_array3;
+   bit yoot_array4;
+  
+   yoot_array1 = rand()%2;
+   delay_ms(1);
+   yoot_array2 = rand()%2;
+   delay_ms(1);
+   yoot_array3 = rand()%2;
+   delay_ms(1);
+   yoot_array4 = rand()%2;
+                          
+   cnt = yoot_array1 + yoot_array2 + yoot_array3 + yoot_array4;          
+
+   return cnt;
+}
+#endif

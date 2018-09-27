@@ -1,0 +1,49 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+user_font1                                                                        0x0500      40
+blue_win                                                                          0x0528      64
+red_win                                                                           0x0568      64
+_seed                                                                             0x05A8       4
+_base_y                                                                           0x05AC       4
+_lcd_y                                                                            0x05B0       1
+_lcd_maxx                                                                         0x05B1       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+B_position                                                                        R4,R5        2
+R_position                                                                        R6,R7        2
+key                                                                               R9           1
+key_flag                                                                          R2.0      1bit
+i                                                                                 R10,R11      2
+j                                                                                 R12,R13      2
+_lcd_x                                                                            R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+goal                                                                              0x000F3     35
+throw_once_more                                                                   0x00116     15
+count                                                                             0x00125     58
+key_in                                                                            0x0015F     27
+key_chk                                                                           0x0017A     10
+location                                                                          0x00184     91
+location2                                                                         0x001DF     41
+step                                                                              0x00208    587
+combine                                                                           0x00453     16
+text                                                                              0x00463    278
+main                                                                              0x00579    180
+srand                                                                             0x0062D      9
+rand                                                                              0x00636     23
+_lcd_write_nibble_G102                                                            0x0064D     20
+_lcd_write_data                                                                   0x00661     12
+lcd_write_byte                                                                    0x0066D      8
+lcd_gotoxy                                                                        0x00675     15
+lcd_clear                                                                         0x00684     13
+lcd_putchar                                                                       0x00691     25
+lcd_init                                                                          0x006AA     46

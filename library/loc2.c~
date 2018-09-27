@@ -1,0 +1,12 @@
+#ifndef _loc2_
+#define _loc2_
+
+int location2(int yoot,int slot)
+{
+   int l_slot = 0;
+   
+   l_slot = slot + yoot; //½½·Ô ¿¬»ê ³¡
+    
+   return l_slot;   
+}
+#endif
